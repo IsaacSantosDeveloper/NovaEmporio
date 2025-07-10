@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monte seu Macarrão</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <h1>🍝 Monte seu Macarrão</h1>
+
+  <form id="form-pedido">
+    <div class="form-section">
+      <label>Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label>Consumo:</label>
+      <select name="consumo">
+        <option value="Local">Local</option>
+        <option value="Viagem">Viagem</option>
+      </select>
+
+      <label>Mesa (se consumo local):</label>
+      <input type="text" name="mesa">
+    </div>
+
+    <div class="form-section">
+      <h2>01. Escolha seu tipo de massa</h2>
+      <div class="checkbox-group">
+        <label><input type="radio" name="massa" value="Espaguete">Espaguete</label>
+        <label><input type="radio" name="massa" value="Parafuso">Parafuso</label>
+        <label><input type="radio" name="massa" value="Talharim">Talharim</label>
+        <label><input type="radio" name="massa" value="Penne">Penne</label>
+        <label><input type="radio" name="massa" value="Integral">Integral</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>02. Escolha o sabor</h2>
+      <div class="checkbox-group">
+        <label><input type="radio" name="sabor" value="Tradicional">Tradicional</label>
+        <label><input type="radio" name="sabor" value="Frango">Frango</label>
+        <label><input type="radio" name="sabor" value="Colobresa">Colobresa</label>
+        <label><input type="radio" name="sabor" value="Filé de Frango">Filé de Frango</label>
+        <label><input type="radio" name="sabor" value="Camarão">Camarão</label>
+        <label><input type="radio" name="sabor" value="Filé Mignon">Filé Mignon</label>
+        <label><input type="radio" name="sabor" value="Carne do Sol em Cubo">Carne do Sol Cubo</label>
+        <label><input type="radio" name="sabor" value="Carne do Sol Desfiada">Carne do Sol Desfiada</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>03. Escolha o seu molho</h2>
+      <h3 style="color: #f5c97b;">Quantidade:</h3>
+      <div class="checkbox-group">
+        <label><input type="radio" name="quantidadeMolho" value="Pouco">Pouco</label>
+        <label><input type="radio" name="quantidadeMolho" value="Normal">Normal</label>
+        <label><input type="radio" name="quantidadeMolho" value="Muito">Muito</label>
+      </div>
+
+      <h3 style="color: #f5c97b;">Tipo de Molho:</h3>
+      <div class="checkbox-group">
+        <label><input type="radio" name="tipoMolho" value="Branco">Branco</label>
+        <label><input type="radio" name="tipoMolho" value="Tomate">Tomate</label>
+        <label><input type="radio" name="tipoMolho" value="Camarão">Camarão</label>
+        <label><input type="radio" name="tipoMolho" value="Dois Molhos">Dois Molhos</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>04. Escolha os ingredientes</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="ingredientes" value="Cebola">Cebola</label>
+        <label><input type="checkbox" name="ingredientes" value="Tomate">Tomate</label>
+        <label><input type="checkbox" name="ingredientes" value="Pimentão">Pimentão</label>
+        <label><input type="checkbox" name="ingredientes" value="Cheiro Verde">Cheiro Verde</label>
+        <label><input type="checkbox" name="ingredientes" value="Uvas Passas">Uvas Passas</label>
+        <label><input type="checkbox" name="ingredientes" value="Alho">Alho</label>
+        <label><input type="checkbox" name="ingredientes" value="Azeitona">Azeitona</label>
+        <label><input type="checkbox" name="ingredientes" value="Milho">Milho</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>05. Escolha os temperos (2 opções)</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="temperos" value="Batata Palha">Batata Palha</label>
+        <label><input type="checkbox" name="temperos" value="Queijo Ralado">Queijo Ralado</label>
+        <label><input type="checkbox" name="temperos" value="Mussarela">Mussarela</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>06. Toque final (2 opções)</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="toque" value="Orégano">Orégano</label>
+        <label><input type="checkbox" name="toque" value="Pimenta Calabresa">Pimenta Calabresa</label>
+        <label><input type="checkbox" name="toque" value="Pimenta Bico">Pimenta Bico</label>
+        <label><input type="checkbox" name="toque" value="Salsinha">Salsinha</label>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <h2>07. Extras</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="extras" value="Mussarela">Mussarela</label>
+        <label><input type="checkbox" name="extras" value="Bacon">Bacon</label>
+        <label><input type="checkbox" name="extras" value="Carne do Sol">Carne do Sol</label>
+        <label><input type="checkbox" name="extras" value="Calabresa">Calabresa</label>
+        <label><input type="checkbox" name="extras" value="Carne Moída">Carne Moída</label>
+        <label><input type="checkbox" name="extras" value="Frango">Frango</label>
+        <label><input type="checkbox" name="extras" value="Ovo de Codorna">Ovo de Codorna</label>
+        <label><input type="checkbox" name="extras" value="Presunto">Presunto</label>
+        <label><input type="checkbox" name="extras" value="Queijo Fatiado">Queijo Fatiado</label>
+      </div>
+    </div>
+
+<div class="form-buttons">
+  <button type="submit">Enviar Pedido</button>
+  <button type="button" onclick="abrirModal()">Visualizar Pedido</button>
+</div>
+
+  </form>
+
+  <!-- MODAL -->
+  <div id="resumoModal" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close" onclick="fecharModal()">&times;</a>
+      <h2>Resumo do Pedido</h2>
+      <div class="modal-section">
+        <h3>Nome:</h3>
+        <p id="resumoNome"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Consumo:</h3>
+        <p id="resumoConsumo"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Mesa:</h3>
+        <p id="resumoMesa"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Massa:</h3>
+        <p id="resumoMassa"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Sabor:</h3>
+        <p id="resumoSabor"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Molho:</h3>
+        <p id="resumoMolho"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Ingredientes:</h3>
+        <p id="resumoIngredientes"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Temperos:</h3>
+        <p id="resumoTemperos"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Toque Final:</h3>
+        <p id="resumoToque"></p>
+      </div>
+      <div class="modal-section">
+        <h3>Extras:</h3>
+        <p id="resumoExtras"></p>
+      </div>
+      <div class="modal-buttons">
+        <button type="button" class="btn-fechar" onclick="fecharModal()">Fechar</button>
+        <button type="button" class="btn-limpar" onclick="limparModal()">LIMPAR</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script>
+
+    document.getElementById('form-pedido').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Pedido enviado! (implementação futura)');
+    });
+
+
+    function limitarCheckboxes(name, limite) {
+      const checkboxes = document.querySelectorAll(`input[name="${name}"]`);
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+          const selecionados = Array.from(checkboxes).filter(c => c.checked);
+          if (selecionados.length > limite) {
+            cb.checked = false;
+            alert(`Você só pode escolher até ${limite} opções.`);
+          }
+        });
+      });
+    }
+
+    limitarCheckboxes('temperos', 2);
+    limitarCheckboxes('toque', 2);
+
+    function abrirModal() {
+      const form = document.getElementById('form-pedido');
+
+      const getRadio = name => {
+        const input = form.querySelector(`input[name="${name}"]:checked`);
+        return input ? input.value : 'Não selecionado';
+      };
+
+      const getChecks = name => {
+        const inputs = form.querySelectorAll(`input[name="${name}"]:checked`);
+        return Array.from(inputs).map(i => i.value).join(', ') || 'Nenhum';
+      };
+
+      // Pegando valores dos inputs
+      document.getElementById('resumoNome').textContent = form.querySelector('[name="nome"]').value || 'Não informado';
+      document.getElementById('resumoConsumo').textContent = form.querySelector('[name="consumo"]').value || 'Não informado';
+      document.getElementById('resumoMesa').textContent = form.querySelector('[name="mesa"]').value || 'Não informado';
+      document.getElementById('resumoMassa').textContent = getRadio('massa');
+      document.getElementById('resumoSabor').textContent = getRadio('sabor');
+      document.getElementById('resumoMolho').textContent = `${getRadio('quantidadeMolho')} - ${getRadio('tipoMolho')}`;
+      document.getElementById('resumoIngredientes').textContent = getChecks('ingredientes');
+      document.getElementById('resumoTemperos').textContent = getChecks('temperos');
+      document.getElementById('resumoToque').textContent = getChecks('toque');
+      document.getElementById('resumoExtras').textContent = getChecks('extras');
+
+      // Exibe o modal
+      document.getElementById('resumoModal').style.display = 'flex';
+    }
+
+    function fecharModal() {
+      document.getElementById('resumoModal').style.display = 'none';
+    }
+
+    function limparModal() {
+      document.querySelectorAll('#resumoModal .modal-section p').forEach(p => p.textContent = '');
+    }
+  </script>
+
+
+
+</body>
+
+</html>
